@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riwayat Transaksi</title>
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Rose:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container max-w-[768px] pb-20">
+      <div class="flex min-h-dvh flex-col gap-4 bg-green-50 p-4">
+        <div class="flex w-full flex-col">
+          <!-- appbar -->
+          <div
+            class="flex items-center z-10 fixed max-w-[768px] left-1/2 top-0 -translate-x-1/2 w-full gap-5 bg-white p-4 text-gray-900"
+          >
+            <a
+              href="./transaction-settled.html"
+              class="hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400"
+              onclick="history.back()"
+            >
+              <span
+                class="i-material-symbols-arrow-left-alt-rounded text-icon-md block"
+              ></span>
+            </a>
+            <p class="text-lg font-semibold">Status Transaksi</p>
+          </div>
+          <!-- ./appbar -->
+
+          <div class="bg-white rounded-2xl mt-16">
+            <!-- Search -->
+
+            <div class="relative m-4">
+              <input
+                placeholder="Cari Transaksi"
+                id="my-input-text"
+                class="rounded-2xl disabled:border-gray-300 disabled:cursor-not-allowed disabled:bg-gray-100 border peer focus:outline-none focus:ring-2 focus:ring-green-400 border-gray-400 bg-white p-3 w-full ps-12 pe-12 placeholder:text-gray-400 text-sm invalid:bg-red-200 invallid:text-red-900 invalid:caret-red-900 focus:invalid:ring-red-900"
+                type="text"
+              />
+
+              <div
+                class="absolute end-0 inset-y-0 text-icon-md flex items-center pe-4 text-gray-400"
+              >
+                <span class="i-material-symbols-search"></span>
+              </div>
+            </div>
+
+            <!--  ./ Search -->
+
+            <!-- History -->
+            <div class="bg-white p-2.5 shadow-md rounded-[20px]">
+              <!-- items -->
+              <a
+                href="./transaction-settled.html"
+                class="flex justify-between hover:bg-emerald-50 p-3 rounded-xl"
+              >
+                <!-- left -->
+                <span class="flex gap-5 items-center">
+                  <span
+                    class="i-material-symbols-download-rounded text-icon-lg text-brands-light-green flex-shrink-0"
+                  ></span>
+                  <span class="flex flex-col">
+                    <span
+                      class="text-sm font-semibold text-gray-900 line-clamp-2"
+                      >Jhon Doe</span
+                    >
+                    <span class="text-xs text-gray-500 line-clamp-1"
+                      >20 April 2025</span
+                    >
+                  </span>
+                </span>
+                <!-- right -->
+                <span class="flex gap-2 items-center flex-shrink-0">
+                  <span class="text-xs font-medium text-red-500"
+                    >- Rp. 300.000,00</span
+                  >
+                  <span
+                    class="i-material-symbols-chevron-right-rounded text-icon-md text-gray-900"
+                  ></span>
+                </span>
+              </a>
+              <div class="last:hidden flex my-2.5 gap-4 whitespace-nowrap px-5">
+                <div class="flex-grow-1 h-[1px] w-full bg-gray-300"></div>
+              </div>
+
+              <a
+                href="./transaction-settled.html"
+                class="flex justify-between hover:bg-emerald-50 p-3 rounded-xl"
+              >
+                <!-- left -->
+                <span class="flex gap-5 items-center">
+                  <span
+                    class="i-material-symbols-download-rounded text-icon-lg text-brands-light-green flex-shrink-0"
+                  ></span>
+                  <span class="flex flex-col">
+                    <span
+                      class="text-sm font-semibold text-gray-900 line-clamp-2"
+                      >Jhon Doe</span
+                    >
+                    <span class="text-xs text-gray-500 line-clamp-1"
+                      >20 April 2025</span
+                    >
+                  </span>
+                </span>
+                <!-- right -->
+                <span class="flex gap-2 items-center flex-shrink-0">
+                  <span class="text-xs font-medium text-red-500"
+                    >- Rp. 300.000,00</span
+                  >
+                  <span
+                    class="i-material-symbols-chevron-right-rounded text-icon-md text-gray-900"
+                  ></span>
+                </span>
+              </a>
+              <div class="last:hidden flex my-2.5 gap-4 whitespace-nowrap px-5">
+                <div class="flex-grow-1 h-[1px] w-full bg-gray-300"></div>
+              </div>
+
+              <a
+                href="./transaction-settled.html"
+                class="flex justify-between hover:bg-emerald-50 p-3 rounded-xl"
+              >
+                <!-- left -->
+                <span class="flex gap-5 items-center">
+                  <span
+                    class="i-material-symbols-download-rounded text-icon-lg text-brands-light-green flex-shrink-0"
+                  ></span>
+                  <span class="flex flex-col">
+                    <span
+                      class="text-sm font-semibold text-gray-900 line-clamp-2"
+                      >Jhon Doe</span
+                    >
+                    <span class="text-xs text-gray-500 line-clamp-1"
+                      >20 April 2025</span
+                    >
+                  </span>
+                </span>
+                <!-- right -->
+                <span class="flex gap-2 items-center flex-shrink-0">
+                  <span class="text-xs font-medium text-red-500"
+                    >- Rp. 300.000,00</span
+                  >
+                  <span
+                    class="i-material-symbols-chevron-right-rounded text-icon-md text-gray-900"
+                  ></span>
+                </span>
+              </a>
+              <div class="last:hidden flex my-2.5 gap-4 whitespace-nowrap px-5">
+                <div class="flex-grow-1 h-[1px] w-full bg-gray-300"></div>
+              </div>
+
+              <a
+                href="./transaction-settled.html"
+                class="flex justify-between hover:bg-emerald-50 p-3 rounded-xl"
+              >
+                <!-- left -->
+                <span class="flex gap-5 items-center">
+                  <span
+                    class="i-material-symbols-download-rounded text-icon-lg text-brands-light-green flex-shrink-0"
+                  ></span>
+                  <span class="flex flex-col">
+                    <span
+                      class="text-sm font-semibold text-gray-900 line-clamp-2"
+                      >Jhon Doe</span
+                    >
+                    <span class="text-xs text-gray-500 line-clamp-1"
+                      >20 April 2025</span
+                    >
+                  </span>
+                </span>
+                <!-- right -->
+                <span class="flex gap-2 items-center flex-shrink-0">
+                  <span class="text-xs font-medium text-red-500"
+                    >- Rp. 300.000,00</span
+                  >
+                  <span
+                    class="i-material-symbols-chevron-right-rounded text-icon-md text-gray-900"
+                  ></span>
+                </span>
+              </a>
+              <div class="last:hidden flex my-2.5 gap-4 whitespace-nowrap px-5">
+                <div class="flex-grow-1 h-[1px] w-full bg-gray-300"></div>
+              </div>
+
+              <a
+                href="./transaction-settled.html"
+                class="flex justify-between hover:bg-emerald-50 p-3 rounded-xl"
+              >
+                <!-- left -->
+                <span class="flex gap-5 items-center">
+                  <span
+                    class="i-material-symbols-download-rounded text-icon-lg text-brands-light-green flex-shrink-0"
+                  ></span>
+                  <span class="flex flex-col">
+                    <span
+                      class="text-sm font-semibold text-gray-900 line-clamp-2"
+                      >Jhon Doe</span
+                    >
+                    <span class="text-xs text-gray-500 line-clamp-1"
+                      >20 April 2025</span
+                    >
+                  </span>
+                </span>
+                <!-- right -->
+                <span class="flex gap-2 items-center flex-shrink-0">
+                  <span class="text-xs font-medium text-red-500"
+                    >- Rp. 300.000,00</span
+                  >
+                  <span
+                    class="i-material-symbols-chevron-right-rounded text-icon-md text-gray-900"
+                  ></span>
+                </span>
+              </a>
+              <div class="last:hidden flex my-2.5 gap-4 whitespace-nowrap px-5">
+                <div class="flex-grow-1 h-[1px] w-full bg-gray-300"></div>
+              </div>
+
+              <a
+                href="./transaction-settled.html"
+                class="flex justify-between hover:bg-emerald-50 p-3 rounded-xl"
+              >
+                <!-- left -->
+                <span class="flex gap-5 items-center">
+                  <span
+                    class="i-material-symbols-download-rounded text-icon-lg text-brands-light-green flex-shrink-0"
+                  ></span>
+                  <span class="flex flex-col">
+                    <span
+                      class="text-sm font-semibold text-gray-900 line-clamp-2"
+                      >Jhon Doe</span
+                    >
+                    <span class="text-xs text-gray-500 line-clamp-1"
+                      >20 April 2025</span
+                    >
+                  </span>
+                </span>
+                <!-- right -->
+                <span class="flex gap-2 items-center flex-shrink-0">
+                  <span class="text-xs font-medium text-red-500"
+                    >- Rp. 300.000,00</span
+                  >
+                  <span
+                    class="i-material-symbols-chevron-right-rounded text-icon-md text-gray-900"
+                  ></span>
+                </span>
+              </a>
+              <div class="last:hidden flex my-2.5 gap-4 whitespace-nowrap px-5">
+                <div class="flex-grow-1 h-[1px] w-full bg-gray-300"></div>
+              </div>
+
+              <a
+                href="./transaction-settled.html"
+                class="flex justify-between hover:bg-emerald-50 p-3 rounded-xl"
+              >
+                <!-- left -->
+                <span class="flex gap-5 items-center">
+                  <span
+                    class="i-material-symbols-download-rounded text-icon-lg text-brands-light-green flex-shrink-0"
+                  ></span>
+                  <span class="flex flex-col">
+                    <span
+                      class="text-sm font-semibold text-gray-900 line-clamp-2"
+                      >Jhon Doe</span
+                    >
+                    <span class="text-xs text-gray-500 line-clamp-1"
+                      >20 April 2025</span
+                    >
+                  </span>
+                </span>
+                <!-- right -->
+                <span class="flex gap-2 items-center flex-shrink-0">
+                  <span class="text-xs font-medium text-red-500"
+                    >- Rp. 300.000,00</span
+                  >
+                  <span
+                    class="i-material-symbols-chevron-right-rounded text-icon-md text-gray-900"
+                  ></span>
+                </span>
+              </a>
+              <div class="last:hidden flex my-2.5 gap-4 whitespace-nowrap px-5">
+                <div class="flex-grow-1 h-[1px] w-full bg-gray-300"></div>
+              </div>
+
+              <!-- ,/items  -->
+            </div>
+          </div>
+
+          <!-- ./ History -->
+
+          <!-- Navbar -->
+
+          <div
+            class="flex max-w-[768px] left-1/2 bg-white fixed bottom-0 -translate-x-1/2 w-full"
+          >
+            <a
+              href="./dashboard.html"
+              class="group flex w-full flex-col items-center focus:outline-none focus:ring-2 focus:ring-green-400 p-3 text-gray-900 hover:bg-gray-50"
+            >
+              <span
+                class="i-material-symbols-home-outline-rounded text-icon-md group-hover:hidden inline"
+              ></span>
+              <span
+                class="i-material-symbols-home-rounded hidden group-hover:block text-icon-md"
+              ></span>
+              <span class="text-xs font-semibold">Beranda</span></a
+            >
+            <a
+              href="./history.html"
+              class="group flex w-full flex-col items-center focus:outline-none focus:ring-2 focus:ring-green-400 p-3 text-gray-900 hover:bg-gray-50"
+            >
+              <span
+                class="i-material-symbols-receipt-outline text-icon-md inline group-hover:hidden"
+              ></span>
+              <span
+                class="i-material-symbols-receipt-rounded hidden group-hover:block text-icon-md"
+              ></span>
+              <span class="text-xs font-semibold">Riwayat</span></a
+            >
+            <a
+              href="./account.html"
+              class="group w-full flex flex-col items-center focus:outline-none focus:ring-2 focus:ring-green-400 p-3 text-gray-900 hover:bg-gray-50"
+            >
+              <span
+                class="i-material-symbols-person-outline-rounded text-icon-md inline group-hover:hidden"
+              ></span>
+              <span
+                class="i-material-symbols-person-rounded hidden group-hover:block text-icon-md"
+              ></span>
+              <span class="text-xs font-semibold">Akun</span></a
+            >
+          </div>
+          <!-- ./ Navbar -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Input Pin</title>
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Rose:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container max-w-[768px]">
+      <div class="flex h-dvh flex-col items-center justify-center bg-green-50 p-4">
+        <div class="flex w-full flex-col">
+          <!-- illustration -->
+          <img
+            src="../assets/images/email-sent.svg"
+            alt="illustration"
+            class="h-[160px] mb-8"
+          />
+          <!-- ./illustration -->
+
+          <!-- title and description -->
+          <div class="flex flex-col mb-5">
+            <h1 class="text-center text-lg font-semibold text-gray-900">
+Konfirmasi Email            </h1>
+            <p class="text-gray-400 text-center text-xs font-medium">
+              Silahkan cek inbox email Anda dan klik link yang kami kirim untuk konfirmasi email Anda. Jika belum muncul tunggu beberapa menit atau klik tombol ini
+            </p>
+          </div>
+          <!-- ./ title and description -->
+
+         
+            <!-- button -->
+            <button
+            type="button"
+           onclick="alert('Email sudah dikirim ulang')"
+            class="inline-flex justify-center items-center gap-2 focus:outline-none focus:ring-2 focus:ring-green-400 bg-transparent text-brands-light-green p-2.5 rounded-xl border-2 border-brands-light-green uppercase text-sm font-semibold disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400 hover:bg-brands-light-green hover:text-white"
+          >
+ 
+          <span
+            class="i-material-symbols-send text-icon-md"
+          ></span>
+            <span>Kirim Ulang</span>
+          </button>
+            <!-- ./ button -->
+
+            <!-- help text -->
+
+              <a
+                href="./dashboard.html"
+                class="text-sm text-center mt-4 font-semibold text-brands-light-green hover:text-brands-dark-green focus:outline-none focus:ring-2 focus:ring-green-400"
+              >
+                Keluar</a
+              > 
+             
+            <!-- ./ help text -->
+          </form>
+          <!-- ./ form -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

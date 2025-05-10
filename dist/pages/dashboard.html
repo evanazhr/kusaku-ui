@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Rose:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container max-w-[768px]">
+      <div class="flex min-h-dvh flex-col gap-4 bg-green-50 p-4 pb-20">
+        <div class="flex w-full flex-col">
+          <!-- avatar -->
+          <div>
+            <a
+              href="#"
+              class="flex mb-5 items-center gap-2 hover:opacity-70 focus:outline-none focus:ring-2 focus:ring-green-400"
+            >
+              <img
+                src="https://avatar.iran.liara.run/public/5"
+                alt="avatar"
+                class="size-6"
+              />
+              <span class="text-lg font-semibold text-gray-900">Jhon Doe</span>
+            </a>
+          </div>
+          <!-- ./ avatar -->
+
+          <!-- card balance -->
+          <div class="mb-2 flex flex-col">
+            <div
+              class="flex flex-col text-white justify-between h-[165px] p-5 rounded-2xl bg-gradient-to-b from-brands-light-green to-emerald-400"
+            >
+              <h1 class="uppercase text-2xl font-brand font-bold">Kusaku</h1>
+              <h2 class="flex flex-row gap-2 text-2xl font-medium items-center">
+                <span id="nominal-balance" show-balance="false"
+                  >Rp. 52.000.000,00</span
+                >
+                <button
+                  id="visibility-button"
+                  type="button"
+                  class="i-material-symbols-visibility text-icon-lg"
+                ></button>
+              </h2>
+            </div>
+          </div>
+          <!-- ./card balance -->
+
+          <!-- card actions -->
+          <div class="w-full mb-4 flex-row gap-2 flex">
+            <button
+              data-modal-target="modal-topup"
+              type="button"
+              class="inline-flex modal-open justify-center w-full items-center gap-2 focus:outline-none focus:ring-2 focus:ring-green-400 bg-transparent text-brands-light-green p-2.5 rounded-xl border-2 border-brands-light-green uppercase text-sm font-semibold disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400 hover:bg-brands-light-green hover:text-white"
+            >
+              <span
+                class="i-material-symbols-download-rounded text-icon-md"
+              ></span>
+              <span>Top Up</span>
+            </button>
+
+            <button
+              type="button"
+              data-modal-target="modal-transfer-check"
+              class="inline-flex modal-open justify-center w-full items-center hover:bg-brands-dark-green gap-2 focus:outline-none focus:ring-2 focus:ring-green-400 bg-brands-light-green p-2.5 rounded-xl text-white uppercase text-sm font-semibold disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400"
+            >
+              <span
+                class="i-material-symbols-compare-arrows-rounded text-icon-md"
+              ></span>
+              <span>Transfer</span>
+            </button>
+          </div>
+
+          <!-- ./ card actions -->
+
+          <!-- History -->
+          <div>
+            <div class="bg-white p-2.5 shadow-md rounded-[20px]">
+              <!-- card header -->
+              <div class="mb-2 flex justify-between p-2.5">
+                <p class="font-semibold text-gray-900">Riwayat Transaksi</p>
+                <a
+                  href="./history.html"
+                  class="text-sm font-semibold text-brands-light-green hover:text-brands-dark-green focus:outline-none focus:ring-2 focus:ring-green-400"
+                  >Lihat lainnya</a
+                >
+              </div>
+              <!-- ./card header -->
+
+              <!-- items -->
+
+              <a
+                href="./transaction-settled.html"
+                class="flex justify-between hover:bg-emerald-50 p-3 rounded-xl"
+              >
+                <!-- left -->
+                <span class="flex gap-5 items-center">
+                  <span
+                    class="i-material-symbols-download-rounded text-icon-lg text-brands-light-green flex-shrink-0"
+                  ></span>
+                  <span class="flex flex-col">
+                    <span
+                      class="text-sm font-semibold text-gray-900 line-clamp-2"
+                      >Jhon Doe</span
+                    >
+                    <span class="text-xs text-gray-500 line-clamp-1"
+                      >Description</span
+                    >
+                  </span>
+                </span>
+                <!-- right -->
+                <span class="flex gap-2 items-center flex-shrink-0">
+                  <span class="text-xs font-medium text-red-500"
+                    >- Rp. 300.000,00</span
+                  >
+                  <span
+                    class="i-material-symbols-chevron-right-rounded text-icon-md text-gray-900"
+                  ></span>
+                </span>
+              </a>
+              <div class="last:hidden flex my-2.5 gap-4 whitespace-nowrap px-5">
+                <div class="flex-grow-1 h-[1px] w-full bg-gray-300"></div>
+              </div>
+              <a
+                href="./transaction-settled.html"
+                class="flex justify-between hover:bg-emerald-50 p-3 rounded-xl"
+              >
+                <!-- left -->
+                <span class="flex gap-5 items-center">
+                  <span
+                    class="i-material-symbols-download-rounded text-icon-lg text-brands-light-green flex-shrink-0"
+                  ></span>
+                  <span class="flex flex-col">
+                    <span
+                      class="text-sm font-semibold text-gray-900 line-clamp-2"
+                      >Jhon Doe</span
+                    >
+                    <span class="text-xs text-gray-500 line-clamp-1"
+                      >Description</span
+                    >
+                  </span>
+                </span>
+                <!-- right -->
+                <span class="flex gap-2 items-center flex-shrink-0">
+                  <span class="text-xs font-medium text-red-500"
+                    >- Rp. 300.000,00</span
+                  >
+                  <span
+                    class="i-material-symbols-chevron-right-rounded text-icon-md text-gray-900"
+                  ></span>
+                </span>
+              </a>
+              <div class="last:hidden flex my-2.5 gap-4 whitespace-nowrap px-5">
+                <div class="flex-grow-1 h-[1px] w-full bg-gray-300"></div>
+              </div>
+              <a
+                href="./transaction-settled.html"
+                class="flex justify-between hover:bg-emerald-50 p-3 rounded-xl"
+              >
+                <!-- left -->
+                <span class="flex gap-5 items-center">
+                  <span
+                    class="i-material-symbols-download-rounded text-icon-lg text-brands-light-green flex-shrink-0"
+                  ></span>
+                  <span class="flex flex-col">
+                    <span
+                      class="text-sm font-semibold text-gray-900 line-clamp-2"
+                      >Jhon Doe</span
+                    >
+                    <span class="text-xs text-gray-500 line-clamp-1"
+                      >Description</span
+                    >
+                  </span>
+                </span>
+                <!-- right -->
+                <span class="flex gap-2 items-center flex-shrink-0">
+                  <span class="text-xs font-medium text-red-500"
+                    >- Rp. 300.000,00</span
+                  >
+                  <span
+                    class="i-material-symbols-chevron-right-rounded text-icon-md text-gray-900"
+                  ></span>
+                </span>
+              </a>
+              <div class="last:hidden flex my-2.5 gap-4 whitespace-nowrap px-5">
+                <div class="flex-grow-1 h-[1px] w-full bg-gray-300"></div>
+              </div>
+              <a
+                href="./transaction-settled.html"
+                class="flex justify-between hover:bg-emerald-50 p-3 rounded-xl"
+              >
+                <!-- left -->
+                <span class="flex gap-5 items-center">
+                  <span
+                    class="i-material-symbols-download-rounded text-icon-lg text-brands-light-green flex-shrink-0"
+                  ></span>
+                  <span class="flex flex-col">
+                    <span
+                      class="text-sm font-semibold text-gray-900 line-clamp-2"
+                      >Jhon Doe</span
+                    >
+                    <span class="text-xs text-gray-500 line-clamp-1"
+                      >Description</span
+                    >
+                  </span>
+                </span>
+                <!-- right -->
+                <span class="flex gap-2 items-center flex-shrink-0">
+                  <span class="text-xs font-medium text-red-500"
+                    >- Rp. 300.000,00</span
+                  >
+                  <span
+                    class="i-material-symbols-chevron-right-rounded text-icon-md text-gray-900"
+                  ></span>
+                </span>
+              </a>
+              <div class="last:hidden flex my-2.5 gap-4 whitespace-nowrap px-5">
+                <div class="flex-grow-1 h-[1px] w-full bg-gray-300"></div>
+              </div>
+              <a
+                href="./transaction-settled.html"
+                class="flex justify-between hover:bg-emerald-50 p-3 rounded-xl"
+              >
+                <!-- left -->
+                <span class="flex gap-5 items-center">
+                  <span
+                    class="i-material-symbols-download-rounded text-icon-lg text-brands-light-green flex-shrink-0"
+                  ></span>
+                  <span class="flex flex-col">
+                    <span
+                      class="text-sm font-semibold text-gray-900 line-clamp-2"
+                      >Jhon Doe</span
+                    >
+                    <span class="text-xs text-gray-500 line-clamp-1"
+                      >Description</span
+                    >
+                  </span>
+                </span>
+                <!-- right -->
+                <span class="flex gap-2 items-center flex-shrink-0">
+                  <span class="text-xs font-medium text-red-500"
+                    >- Rp. 300.000,00</span
+                  >
+                  <span
+                    class="i-material-symbols-chevron-right-rounded text-icon-md text-gray-900"
+                  ></span>
+                </span>
+              </a>
+              <div class="last:hidden flex my-2.5 gap-4 whitespace-nowrap px-5">
+                <div class="flex-grow-1 h-[1px] w-full bg-gray-300"></div>
+              </div>
+              <a
+                href="./transaction-settled.html"
+                class="flex justify-between hover:bg-emerald-50 p-3 rounded-xl"
+              >
+                <!-- left -->
+                <span class="flex gap-5 items-center">
+                  <span
+                    class="i-material-symbols-download-rounded text-icon-lg text-brands-light-green flex-shrink-0"
+                  ></span>
+                  <span class="flex flex-col">
+                    <span
+                      class="text-sm font-semibold text-gray-900 line-clamp-2"
+                      >Jhon Doe</span
+                    >
+                    <span class="text-xs text-gray-500 line-clamp-1"
+                      >Description</span
+                    >
+                  </span>
+                </span>
+                <!-- right -->
+                <span class="flex gap-2 items-center flex-shrink-0">
+                  <span class="text-xs font-medium text-red-500"
+                    >- Rp. 300.000,00</span
+                  >
+                  <span
+                    class="i-material-symbols-chevron-right-rounded text-icon-md text-gray-900"
+                  ></span>
+                </span>
+              </a>
+              <div class="last:hidden flex my-2.5 gap-4 whitespace-nowrap px-5">
+                <div class="flex-grow-1 h-[1px] w-full bg-gray-300"></div>
+              </div>
+              <!-- ,/items  -->
+            </div>
+          </div>
+
+          <!-- ./ History -->
+
+          <!-- Navbar -->
+
+          <div
+            class="flex max-w-[768px] left-1/2 bg-white fixed bottom-0 -translate-x-1/2 w-full"
+          >
+            <a
+              href="./dashboard.html"
+              class="group flex w-full flex-col items-center focus:outline-none focus:ring-2 focus:ring-green-400 p-3 text-gray-900 hover:bg-gray-50"
+            >
+              <span
+                class="i-material-symbols-home-outline-rounded text-icon-md group-hover:hidden inline"
+              ></span>
+              <span
+                class="i-material-symbols-home-rounded hidden group-hover:block text-icon-md"
+              ></span>
+              <span class="text-xs font-semibold">Beranda</span></a
+            >
+            <a
+              href="./history.html"
+              class="group flex w-full flex-col items-center focus:outline-none focus:ring-2 focus:ring-green-400 p-3 text-gray-900 hover:bg-gray-50"
+            >
+              <span
+                class="i-material-symbols-receipt-outline text-icon-md inline group-hover:hidden"
+              ></span>
+              <span
+                class="i-material-symbols-receipt-rounded hidden group-hover:block text-icon-md"
+              ></span>
+              <span class="text-xs font-semibold">Riwayat</span></a
+            >
+            <a
+              href="./account.html"
+              class="group w-full flex flex-col items-center focus:outline-none focus:ring-2 focus:ring-green-400 p-3 text-gray-900 hover:bg-gray-50"
+            >
+              <span
+                class="i-material-symbols-person-outline-rounded text-icon-md inline group-hover:hidden"
+              ></span>
+              <span
+                class="i-material-symbols-person-rounded hidden group-hover:block text-icon-md"
+              ></span>
+              <span class="text-xs font-semibold">Akun</span></a
+            >
+          </div>
+          <!-- ./ Navbar -->
+
+          <!-- topup modal -->
+          <dialog
+            id="modal-topup"
+            class="size-full m-0 open:justify-end open:flex open:items-center open:flex-col open:max-w-none backdrop:bg-black/50 backdrop:backdrop-blur-lg open:max-h-none bg-transparent"
+          >
+            <div
+              class="bg-white rounded-tr-2xl w-full relative p-4 max-w-[768px] rounded-tl-2xl"
+            >
+              <div
+                class="absolute flex justify-between items-center -top-20 left-0 w-full"
+              >
+                <button
+                  type="button"
+                  data-modal-target="modal-topup"
+                  class="inline-flex modal-close invisible items-center mx-4 gap-2 focus:outline-none focus:ring-2 w-24 focus:ring-green-400 bg-white disabled:bg-transparent text-brands-light-green p-2 rounded-xl uppercase text-xs font-semibold disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400 hover:bg-emerald-50 hover:text-brands-light-green"
+                >
+                  <span
+                    class="i-material-symbols-chevron-left-rounded text-icon-md"
+                  ></span>
+                  <span>back</span>
+                </button>
+
+                <button
+                  type="button"
+                  data-modal-target="modal-topup"
+                  class="inline-flex modal-close mx-4 items-center gap-2 focus:outline-none focus:ring-2 w-24 focus:ring-green-400 bg-white disabled:bg-transparent text-brands-light-green p-2 rounded-xl uppercase text-xs font-semibold disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400 hover:bg-emerald-50 hover:text-brands-light-green"
+                >
+                  <span
+                    class="i-material-symbols-close-rounded text-icon-md"
+                  ></span>
+                  <span>close</span>
+                </button>
+              </div>
+
+              <!-- input -->
+              <div>
+                <label
+                  for="nominal"
+                  class="text-sm font-medium uppercase text-gray-900"
+                  >nominal</label
+                >
+                <div class="relative mt-4">
+                  <input
+                    placeholder="Nominal Rupiah"
+                    id="nominal"
+                    class="rounded-2xl disabled:border-gray-300 disabled:cursor-not-allowed disabled:bg-gray-100 border peer focus:outline-none focus:ring-2 focus:ring-green-400 border-gray-400 bg-white p-3 w-full ps-12 pe-8 placeholder:text-gray-400 text-sm invalid:bg-red-200 invallid:text-red-900 invalid:caret-red-900 focus:invalid:ring-red-900"
+                    type="number"
+                    min="0"
+                  />
+                  <div
+                    class="flex items-center absolute peer-invalid:peer-focus:text-red-900 peer-invalid:text-red-400 start-0 inset-y-0 text-icon-md ps-4 text-gray-400"
+                  >
+                    <span
+                      class="i-material-symbols-account-balance-wallet text-icon-md"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+              <button
+                type="button"
+                onclick="window.location = './history.html'"
+                class="mt-8 inline-flex justify-center w-full items-center gap-2 focus:outline-none focus:ring-2 focus:ring-green-400 p-2 rounded-xl border-2 border-brands-light-green uppercase text-xs font-semibold disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400 hover:bg-brands-dark-green text-white bg-brands-light-green hover:text-white"
+              >
+                <span
+                  class="i-material-symbols-send-rounded text-icon-md"
+                ></span>
+                <span>top up</span>
+              </button>
+            </div>
+          </dialog>
+          <!-- ./topup modal -->
+
+          <!-- section transfer modal -->
+
+          <!-- transfer modal check -->
+          <dialog
+            id="modal-transfer-check"
+            class="size-full m-0 open:justify-end open:flex open:items-center open:flex-col open:max-w-none backdrop:bg-black/50 backdrop:backdrop-blur-lg open:max-h-none bg-transparent"
+          >
+            <div
+              class="bg-white rounded-tr-2xl w-full relative p-4 max-w-[768px] rounded-tl-2xl"
+            >
+              <div
+                class="absolute flex justify-between items-center -top-20 left-0 w-full"
+              >
+                <button
+                  type="button"
+                  class="inline-flex modal-back invisible items-center mx-4 gap-2 focus:outline-none focus:ring-2 w-24 focus:ring-green-400 bg-white disabled:bg-transparent text-brands-light-green p-2 rounded-xl uppercase text-xs font-semibold disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400 hover:bg-emerald-50 hover:text-brands-light-green"
+                >
+                  <span
+                    class="i-material-symbols-chevron-left-rounded text-icon-md"
+                  ></span>
+                  <span>back</span>
+                </button>
+
+                <button
+                  type="button"
+                  data-modal-target="modal-transfer-check"
+                  class="inline-flex modal-close mx-4 items-center gap-2 focus:outline-none focus:ring-2 w-24 focus:ring-green-400 bg-white disabled:bg-transparent text-brands-light-green p-2 rounded-xl uppercase text-xs font-semibold disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400 hover:bg-emerald-50 hover:text-brands-light-green"
+                >
+                  <span
+                    class="i-material-symbols-close-rounded text-icon-md"
+                  ></span>
+                  <span>close</span>
+                </button>
+              </div>
+              <!-- input -->
+              <div>
+                <div class="flex flex-row items-center justify-between">
+                  <img
+                    src="../assets/images/logo-green.svg"
+                    alt="KUSAKU"
+                    class="size-12"
+                  />
+                  <a
+                    href="#"
+                    data-modal-target="modal-transfer--search-contact"
+                    class="text-sm modal-open text-brands-light-green hover:text-brands-dark-green"
+                    >Cari Kontak</a
+                  >
+                </div>
+
+                <div class="relative mt-4">
+                  <input
+                    placeholder="Masukan Kusaku ID"
+                    class="rounded-2xl disabled:border-gray-300 disabled:cursor-not-allowed disabled:bg-gray-100 border peer focus:outline-none focus:ring-2 focus:ring-green-400 border-gray-400 bg-white p-3 w-full ps-4 pe-12 placeholder:text-gray-400 text-sm invalid:bg-red-200 invallid:text-red-900 invalid:caret-red-900 focus:invalid:ring-red-900"
+                    type="number"
+                    min="0"
+                  />
+                  <div
+                    class="flex items-center absolute peer-invalid:peer-focus:text-red-900 peer-invalid:text-red-400 end-0 inset-y-0 text-icon-md pe-4 text-gray-400"
+                  >
+                    <span class="i-material-symbols-search text-icon-md"></span>
+                  </div>
+                </div>
+              </div>
+              <button
+                type="button"
+                class="mt-8 inline-flex justify-center w-full items-center gap-2 focus:outline-none focus:ring-2 focus:ring-green-400 p-2 rounded-xl border-2 border-brands-light-green uppercase text-xs font-semibold disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400 hover:bg-brands-dark-green text-white bg-brands-light-green hover:text-white"
+              >
+                <span class="i-material-symbols-search text-icon-md"></span>
+                <span>cek rekening</span>
+              </button>
+            </div>
+          </dialog>
+          <!-- ./transfer modal check -->
+
+          <!-- transfer modal search contact -->
+          <dialog
+            id="modal-transfer--search-contact"
+            class="size-full m-0 open:justify-end open:flex open:items-center open:flex-col open:max-w-none backdrop:bg-black/50 backdrop:backdrop-blur-lg open:max-h-none bg-transparent"
+          >
+            <div
+              class="bg-white rounded-tr-2xl w-full relative p-4 max-w-[768px] rounded-tl-2xl"
+            >
+              <div
+                class="absolute flex justify-between items-center -top-20 left-0 w-full"
+              >
+                <button
+                  type="button"
+                  data-modal-target="modal-transfer-check"
+                  class="inline-flex modal-back items-center mx-4 gap-2 focus:outline-none focus:ring-2 w-24 focus:ring-green-400 bg-white disabled:bg-transparent text-brands-light-green p-2 rounded-xl uppercase text-xs font-semibold disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400 hover:bg-emerald-50 hover:text-brands-light-green"
+                >
+                  <span
+                    class="i-material-symbols-chevron-left-rounded text-icon-md"
+                  ></span>
+                  <span>back</span>
+                </button>
+
+                <button
+                  type="button"
+                  data-modal-target="modal-transfer--search-contact"
+                  class="inline-flex modal-close mx-4 items-center gap-2 focus:outline-none focus:ring-2 w-24 focus:ring-green-400 bg-white disabled:bg-transparent text-brands-light-green p-2 rounded-xl uppercase text-xs font-semibold disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400 hover:bg-emerald-50 hover:text-brands-light-green"
+                >
+                  <span
+                    class="i-material-symbols-close-rounded text-icon-md"
+                  ></span>
+                  <span>close</span>
+                </button>
+              </div>
+
+              <!-- input -->
+              <div class="relative mt-4">
+                <div id="show-contact"></div>
+                <input
+                id="search-contact-input"
+                  placeholder="Cari nama orang / no rekening"
+                  class="rounded-2xl disabled:border-gray-300 disabled:cursor-not-allowed disabled:bg-gray-100 border peer focus:outline-none focus:ring-2 focus:ring-green-400 border-gray-400 bg-white p-3 w-full ps-4 pe-12 placeholder:text-gray-400 text-sm invalid:bg-red-200 invallid:text-red-900 invalid:caret-red-900 focus:invalid:ring-red-900"
+                  type="text"
+                  min="0"
+                />
+                <div
+                  class="flex items-center absolute peer-invalid:peer-focus:text-red-900 peer-invalid:text-red-400 end-0 inset-y-0 text-icon-md pe-4 text-gray-400"
+                >
+                  <span class="i-material-symbols-search text-icon-md"></span>
+                </div>
+              </div>
+              <div id="contacts" class="max-h-52 overflow-y-auto"></div>
+            </div>
+          </dialog>
+          <!-- ./ transfer modal search contact -->
+
+          <!-- Transfer Input Nominal -->
+          <dialog
+            id="modal-transfer--input-nominal"
+            class="size-full m-0 open:justify-end open:flex open:items-center open:flex-col open:max-w-none backdrop:bg-black/50 backdrop:backdrop-blur-lg open:max-h-none bg-transparent"
+          >
+            <form
+              action="#"
+              method="post"
+              class="bg-white rounded-tr-2xl w-full relative p-4 flex flex-col gap-4 max-w-[768px] rounded-tl-2xl"
+            >
+              <div
+                class="absolute flex justify-between items-center -top-20 left-0 w-full"
+              >
+                <button
+                  type="button"
+                  class="inline-flex modal-back items-center mx-4 gap-2 focus:outline-none focus:ring-2 w-24 focus:ring-green-400 bg-white disabled:bg-transparent text-brands-light-green p-2 rounded-xl uppercase text-xs font-semibold disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400 hover:bg-emerald-50 hover:text-brands-light-green"
+                >
+                  <span
+                    class="i-material-symbols-chevron-left-rounded text-icon-md"
+                  ></span>
+                  <span>back</span>
+                </button>
+
+                <button
+                  type="button"
+                  data-modal-target="modal-transfer--input-nominal"
+                  class="inline-flex modal-close mx-4 items-center gap-2 focus:outline-none focus:ring-2 w-24 focus:ring-green-400 bg-white disabled:bg-transparent text-brands-light-green p-2 rounded-xl uppercase text-xs font-semibold disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400 hover:bg-emerald-50 hover:text-brands-light-green"
+                >
+                  <span
+                    class="i-material-symbols-close-rounded text-icon-md"
+                  ></span>
+                  <span>close</span>
+                </button>
+              </div>
+              <!-- Logo + Search Contact Button -->
+              <div class="flex justify-between">
+                <div class="flex items-center gap-4">
+                  <img
+                    src="../assets/images/logo-green.svg"
+                    alt="Logo"
+                    class="h-5"
+                  />
+                  <div class="flex items-center gap-2 text-xs font-medium">
+                    <span id="modal-transfer--account-name">Jane Dane</span>
+                    <span
+                      class="i-material-symbols-circle text-[4px] text-gray-500"
+                    ></span>
+                    <span id="modal-transfer--account-number">239523770</span>
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="text-xs font-semibold text-brands-light-green modal-back hover:text-brands-light-green/70 focus:outline-none focus:ring-2 focus:ring-green-400"
+                  >Cari Kontak</a
+                >
+              </div>
+              <!-- ./ Logo + Search Contact Button -->
+
+              <!-- Input + Button -->
+
+              <div class="flex flex-col gap-y-1.5">
+                <div class="relative">
+                  <input
+                    type="number"
+                    inputmode="numeric"
+                    placeholder="Nominal rupiah"
+                    class="placeholder:text-gray-400 peer w-full rounded-2xl border border-gray-400 bg-white p-3 pe-4 ps-12 text-sm text-gray-900 invalid:bg-red-200 invalid:text-red-900 invalid:caret-red-900 focus:outline-none focus:ring-2 focus:ring-green-400 focus:invalid:ring-red-900 disabled:border-gray-300 disabled:bg-gray-100"
+                  />
+                  <div
+                    class="flex items-center absolute peer-invalid:peer-focus:text-red-900 peer-invalid:text-red-400 start-0 inset-y-0 text-icon-md ps-4 text-gray-400"
+                  >
+                    <span
+                      class="i-material-symbols-account-balance-wallet text-icon-md"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                type="button"
+                class="inline-flex items-center justify-center gap-2 rounded-xl bg-brands-light-green p-2 text-xs font-semibold uppercase text-white hover:bg-brands-dark-green focus:outline-none focus:ring-2 focus:ring-green-400 disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400"
+              >
+                <span
+                  class="i-material-symbols-send-rounded text-icon-sm"
+                ></span>
+                <span>Lanjut Kirim</span>
+              </button>
+              <!-- ./ Input + Button -->
+            </form>
+          </dialog>
+          <!-- ./ Transfer Input Nominal -->
+
+          <!-- ./ section transfer modal -->
+        </div>
+      </div>
+    </div>
+
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

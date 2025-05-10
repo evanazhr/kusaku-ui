@@ -16,7 +16,7 @@ export default {
       keyframes: {
         'slide-top': {
           '0%': {
-            'webkit-transform': 'translateY(100%',
+            'webkit-transform': 'translateY(100%)',
             transform: 'translateY(100%)',
           },
           '100%': {

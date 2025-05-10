@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index component</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Rose:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container max-w-[768px]">
+      <div class="h-min-screen bg-blue-50 px-4 pb-12">
+        <!-- App bar -->
+        <div class="flex items-center gap-5 bg-white p-4 text-gray-900">
+          <a
+            href=""
+            class="hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400"
+            onclick="history.back()"
+          >
+            <span
+              class="i-material-symbols-arrow-left-alt-rounded text-icon-md block"
+            ></span>
+          </a>
+          <p class="text-lg font-semibold">Untitled</p>
+        </div>
+
+        <!-- app bar -->
+
+        <div class="h-8"></div>
+
+        <!-- Nav Bar -->
+        <div class="flex bg-white">
+          <a
+            href="#"
+            class="group flex w-full flex-col items-center focus:outline-none focus:ring-2 focus:ring-green-400 p-3 text-gray-900 hover:bg-gray-50"
+          >
+            <span
+              class="i-material-symbols-home-outline-rounded text-icon-md group-hover:hidden inline"
+            ></span>
+            <span
+              class="i-material-symbols-home-rounded hidden group-hover:block text-icon-md"
+            ></span>
+            <span class="text-xs font-semibold">Beranda</span></a
+          >
+          <a
+            href="#"
+            class="group flex w-full flex-col items-center focus:outline-none focus:ring-2 focus:ring-green-400 p-3 text-gray-900 hover:bg-gray-50"
+          >
+            <span
+              class="i-material-symbols-receipt-outline text-icon-md inline group-hover:hidden"
+            ></span>
+            <span
+              class="i-material-symbols-receipt-rounded hidden group-hover:block text-icon-md"
+            ></span>
+            <span class="text-xs font-semibold">Riwayat</span></a
+          >
+          <a
+            href="#"
+            class="group w-full flex flex-col items-center focus:outline-none focus:ring-2 focus:ring-green-400 p-3 text-gray-900 hover:bg-gray-50"
+          >
+            <span
+              class="i-material-symbols-person-outline-rounded text-icon-md inline group-hover:hidden"
+            ></span>
+            <span
+              class="i-material-symbols-person-rounded hidden group-hover:block text-icon-md"
+            ></span>
+            <span class="text-xs font-semibold">Akun</span></a
+          >
+        </div>
+        <!-- ./Navbar -->
+
+        <div class="h-8"></div>
+
+        <!-- button primary  -->
+        <div>
+          <h1 class="text-2xl text-center text-gray-900">Button Primary</h1>
+          <!-- button primary large-->
+          <button
+            type="button"
+            class="inline-flex items-center hover:bg-brands-dark-green gap-2 focus:outline-none focus:ring-2 focus:ring-green-400 bg-brands-light-green p-2.5 rounded-xl text-white uppercase text-sm font-semibold disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400"
+          >
+            <span
+              class="i-material-symbols-download-rounded text-icon-md"
+            ></span>
+            <span>My Button</span>
+            <span
+              class="i-material-symbols-download-rounded text-icon-md"
+            ></span>
+          </button>
+          <!-- ./ button primary large -->
+
+          <!-- button primary small-->
+
+          <button
+            type="button"
+            class="inline-flex items-center gap-2 hover:bg-brands-dark-green focus:outline-none focus:ring-2 focus:ring-green-400 bg-brands-light-green p-2 rounded-xl text-white uppercase text-xs font-semibold disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400"
+          >
+            <span
+              class="i-material-symbols-download-rounded text-icon-md"
+            ></span>
+            <span>My Button</span>
+            <span
+              class="i-material-symbols-download-rounded text-icon-md"
+            ></span>
+          </button>
+
+          <!-- ./ button primary small -->
+        </div>
+
+        <!-- ./ button primary -->
+
+        <!-- button outline  -->
+        <div>
+          <h1 class="text-2xl text-center text-gray-900">Button outline</h1>
+          <!-- button outline large-->
+          <button
+            type="button"
+            class="inline-flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-green-400 bg-transparent text-brands-light-green p-2.5 rounded-xl border-2 border-brands-light-green uppercase text-sm font-semibold disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400 hover:bg-brands-light-green hover:text-white"
+          >
+            <span
+              class="i-material-symbols-download-rounded text-icon-md"
+            ></span>
+            <span>My Button</span>
+            <span
+              class="i-material-symbols-download-rounded text-icon-md"
+            ></span>
+          </button>
+          <!-- ./ button outline large -->
+
+          <!-- button outline small-->
+
+          <button
+            type="button"
+            class="inline-flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-green-400 bg-transparent text-brands-light-green p-2 rounded-xl border-2 border-brands-light-green uppercase text-xs font-semibold disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400 hover:bg-brands-light-green hover:text-white"
+          >
+            <span
+              class="i-material-symbols-download-rounded text-icon-md"
+            ></span>
+            <span>My Button</span>
+            <span
+              class="i-material-symbols-download-rounded text-icon-md"
+            ></span>
+          </button>
+
+          <!-- ./ button outline small -->
+        </div>
+
+        <!-- ./ button outline -->
+
+        <!-- button secondary  -->
+        <div>
+          <h1 class="text-2xl text-center text-gray-900">Button Secondary</h1>
+          <!-- button secondary large-->
+          <button
+            type="button"
+            class="inline-flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-green-400 bg-white disabled:bg-transparent text-brands-light-green p-2.5 rounded-xl uppercase text-sm font-semibold disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400 hover:bg-emerald-50 hover:text-brands-light-green"
+          >
+            <span
+              class="i-material-symbols-download-rounded text-icon-md"
+            ></span>
+            <span>My Button</span>
+            <span
+              class="i-material-symbols-download-rounded text-icon-md"
+            ></span>
+          </button>
+          <!-- ./ button secondary large -->
+
+          <!-- button secondary small-->
+
+          <button
+            type="button"
+            class="inline-flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-green-400 bg-white disabled:bg-transparent text-brands-light-green p-2 rounded-xl uppercase text-xs font-semibold disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400 hover:bg-emerald-50 hover:text-brands-light-green"
+          >
+            <span
+              class="i-material-symbols-download-rounded text-icon-md"
+            ></span>
+            <span>My Button</span>
+            <span
+              class="i-material-symbols-download-rounded text-icon-md"
+            ></span>
+          </button>
+
+          <!-- ./ button secondary small -->
+        </div>
+
+        <!-- ./ button secondary -->
+
+        <div class="h-8"></div>
+
+        <!-- input  -->
+
+        <div>
+          <h1 class="text-2xl text-center text-gray-900">Input Text</h1>
+          <div>
+            <label
+              for="my-input-text"
+              class="text-sm font-medium uppercase text-gray-900"
+              >Input label</label
+            >
+            <div class="relative">
+              <input
+                placeholder="input placeholder"
+                id="my-input-text"
+                class="rounded-2xl disabled:border-gray-300 disabled:cursor-not-allowed disabled:bg-gray-100 border peer focus:outline-none focus:ring-2 focus:ring-green-400 border-gray-400 bg-white p-3 w-full ps-12 pe-12 placeholder:text-gray-400 text-sm invalid:bg-red-200 invallid:text-red-900 invalid:caret-red-900 focus:invalid:ring-red-900"
+                type="text"
+              />
+              <div
+                class="flex items-center absolute peer-invalid:peer-focus:text-red-900 peer-invalid:text-red-400 start-0 inset-y-0 text-icon-md ps-4 text-gray-400"
+              >
+                <span class="i-material-symbols-arrow-left-alt"></span>
+              </div>
+              <div
+                class="absolute end-0 inset-y-0 text-icon-md flex items-center pe-4 text-gray-400"
+              >
+                <span class="i-material-symbols-arrow-right-alt"></span>
+              </div>
+            </div>
+            <p class="text-gray-900">This for hint</p>
+          </div>
+        </div>
+
+        <!-- ./ input  -->
+
+        <div class="h-8"></div>
+
+        <!-- card list item -->
+
+        <div>
+          <div class="text-center text-2xl">Card List</div>
+          <div class="bg-white p-2.5 shadow-md rounded-[20px]">
+            <!-- card header -->
+            <div class="mb-2 flex justify-between p-2.5">
+              <p class="font-semibold text-gray-900">Title</p>
+              <a
+                href=""
+                class="text-sm font-semibold text-brands-light-green hover:text-brands-dark-green focus:outline-none focus:ring-2 focus:ring-green-400"
+                >Lihat lainnya</a
+              >
+            </div>
+            <!-- ./card header -->
+
+            <!-- items -->
+            <a
+              href=""
+              class="flex justify-between hover:bg-emerald-50 p-3 rounded-xl"
+            >
+              <!-- left -->
+              <span class="flex gap-5 items-center">
+                <span
+                  class="i-material-symbols-download-rounded text-icon-lg text-brands-light-green flex-shrink-0"
+                ></span>
+                <span class="flex flex-col">
+                  <span class="text-sm font-semibold text-gray-900 line-clamp-2"
+                    >Title</span
+                  >
+                  <span class="text-xs text-gray-500 line-clamp-1"
+                    >Description</span
+                  >
+                </span>
+              </span>
+              <!-- right -->
+              <span class="flex gap-2 items-center flex-shrink-0">
+                <span class="text-cs font-medium text-red-500">Right Text</span>
+                <span
+                  class="i-material-symbols-chevron-right-rounded text-icon-md text-gray-900"
+                ></span>
+              </span>
+            </a>
+            <div class="last:hidden flex my-2.5 gap-4 whitespace-nowrap px-5">
+              <div class="flex-grow-1 h-[1px] w-full bg-gray-300"></div>
+            </div>
+            <a
+              href=""
+              class="flex justify-between hover:bg-emerald-50 p-3 rounded-xl"
+            >
+              <!-- left -->
+              <span class="flex gap-5 items-center">
+                <span
+                  class="i-material-symbols-download-rounded text-icon-lg text-brands-light-green flex-shrink-0"
+                ></span>
+                <span class="flex flex-col">
+                  <span class="text-sm font-semibold text-gray-900 line-clamp-2"
+                    >Title</span
+                  >
+                  <span class="text-xs text-gray-500 line-clamp-1"
+                    >Description</span
+                  >
+                </span>
+              </span>
+              <!-- right -->
+              <span class="flex gap-2 items-center flex-shrink-0">
+                <span class="text-cs font-medium text-red-500">Right Text</span>
+                <span
+                  class="i-material-symbols-chevron-right-rounded text-icon-md text-gray-900"
+                ></span>
+              </span>
+            </a>
+            <div class="last:hidden flex my-2.5 gap-4 whitespace-nowrap px-5">
+              <div class="flex-grow-1 h-[1px] w-full bg-gray-300"></div>
+            </div>
+            <a
+              href=""
+              class="flex justify-between hover:bg-emerald-50 p-3 rounded-xl"
+            >
+              <!-- left -->
+              <span class="flex gap-5 items-center">
+                <span
+                  class="i-material-symbols-download-rounded text-icon-lg text-brands-light-green flex-shrink-0"
+                ></span>
+                <span class="flex flex-col">
+                  <span class="text-sm font-semibold text-gray-900 line-clamp-2"
+                    >Title</span
+                  >
+                  <span class="text-xs text-gray-500 line-clamp-1"
+                    >Description</span
+                  >
+                </span>
+              </span>
+              <!-- right -->
+              <span class="flex gap-2 items-center flex-shrink-0">
+                <span class="text-cs font-medium text-red-500">Right Text</span>
+                <span
+                  class="i-material-symbols-chevron-right-rounded text-icon-md text-gray-900"
+                ></span>
+              </span>
+            </a>
+            <div class="last:hidden flex my-2.5 gap-4 whitespace-nowrap px-5">
+              <div class="flex-grow-1 h-[1px] w-full bg-gray-300"></div>
+            </div>
+            <a
+              href=""
+              class="flex justify-between hover:bg-emerald-50 p-3 rounded-xl"
+            >
+              <!-- left -->
+              <span class="flex gap-5 items-center">
+                <span
+                  class="i-material-symbols-download-rounded text-icon-lg text-brands-light-green flex-shrink-0"
+                ></span>
+                <span class="flex flex-col">
+                  <span class="text-sm font-semibold text-gray-900 line-clamp-2"
+                    >Title</span
+                  >
+                  <span class="text-xs text-gray-500 line-clamp-1"
+                    >Description</span
+                  >
+                </span>
+              </span>
+              <!-- right -->
+              <span class="flex gap-2 items-center flex-shrink-0">
+                <span class="text-cs font-medium text-red-500">Right Text</span>
+                <span
+                  class="i-material-symbols-chevron-right-rounded text-icon-md text-gray-900"
+                ></span>
+              </span>
+            </a>
+            <div class="last:hidden flex my-2.5 gap-4 whitespace-nowrap px-5">
+              <div class="flex-grow-1 h-[1px] w-full bg-gray-300"></div>
+            </div>
+            <!-- ,/items  -->
+          </div>
+        </div>
+        <!-- card list item-->
+
+        
+      </div>
+    </div>
+  </body>
+</html>
